@@ -1,3 +1,5 @@
+'use client';
+
 const FORMSPREE_ENDPOINT = "#"; // Replace with your Formspree endpoint when ready
 
 export function Rsvp() {
