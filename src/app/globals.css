@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  /* Design token colors from design.md */
-  --primary: #ce9b8f; /* Blush pink */
-  --secondary: #e8d9ca; /* Warm beige */
-  --accent: #b8826d; /* Muted terracotta */
-  --background: #fdfbf9; /* Off-white */
-  --foreground: #333333; /* Dark charcoal */
+  /* Elegant wedding color palette */
+  --primary: #c4a589; /* Soft gold/champagne */
+  --secondary: #f5f3f0; /* Ivory */
+  --accent: #8b7355; /* Rich taupe */
+  --background: #faf8f6; /* Warm off-white */
+  --foreground: #2c2c2c; /* Deep charcoal */
 }
 
 @theme inline {

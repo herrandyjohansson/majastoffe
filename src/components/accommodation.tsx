@@ -31,24 +31,25 @@ export function Accommodation() {
   return (
     <section
       id="accommodation"
-      className="mt-16 space-y-6 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        Boende
-      </h2>
-      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_85%,white)]">
-        Vi har ordnat olika alternativ för våra gäster. Välj det som passar dig
-        bäst — att bo på plats är det smidigaste sättet att få ut mest av
-        helgen.
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Accommodation
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
+      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)] max-w-xl">
+        We have arranged several accommodation options for our guests. Choose what works best for you — staying on-site is the perfect way to make the most of the weekend.
       </p>
 
       <div className="grid gap-6 md:grid-cols-3">
         {hotels.map((hotel) => (
           <div
             key={hotel.name}
-            className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)] overflow-hidden"
+            className="rounded-lg bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)] overflow-hidden hover:ring-[color-mix(in_oklab,var(--primary)_40%,transparent)] transition-all"
           >
-            <div className="relative h-48">
+            <div className="relative h-56">
               <Image
                 src={hotel.image}
                 alt={hotel.name}
@@ -58,20 +59,20 @@ export function Accommodation() {
               />
             </div>
             <div className="p-6">
-              <h3 className="font-serif text-lg font-semibold text-[var(--foreground)]">
+              <h3 className="font-serif text-lg font-light text-[var(--foreground)]">
                 {hotel.name}
               </h3>
-              <p className="mt-2 text-sm font-medium text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
+              <p className="mt-2 text-sm font-medium text-[var(--primary)]">
                 {hotel.rate}
               </p>
-              <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_75%,white)]">
+              <p className="mt-4 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
                 {hotel.description}
               </p>
-              <div className="mt-4 text-sm">
+              <div className="mt-4 pt-4 border-t border-[color-mix(in_oklab,var(--primary)_15%,transparent)] text-sm">
                 <span className="text-[color-mix(in_oklab,var(--foreground)_65%,white)]">
-                  Bokningskod:
+                  Booking Code:
                 </span>{" "}
-                <span className="font-semibold text-[var(--foreground)]">
+                <span className="font-medium text-[var(--foreground)]">
                   {hotel.code}
                 </span>
               </div>

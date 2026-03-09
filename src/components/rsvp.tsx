@@ -6,17 +6,19 @@ export function Rsvp() {
   return (
     <section
       id="rsvp"
-      className="mt-16 space-y-6 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        RSVP
-      </h2>
-      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_85%,white)]">
-        Vänligen meddela oss om du kan komma senast{" "}
-        <strong>1 september 2026</strong>.
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Kindly Request Your Response
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
+      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)] max-w-xl">
+        Please let us know if you can join us by <strong>September 1st, 2026</strong>.
       </p>
 
-      <div className="rounded-3xl bg-[color-mix(in_oklab,var(--background)_99%,white)]/95 p-6 shadow-md ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)] md:p-8">
+      <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_99%,white)]/95 p-6 shadow-md ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)] md:p-8">
         <form
           action={FORMSPREE_ENDPOINT}
           method="POST"

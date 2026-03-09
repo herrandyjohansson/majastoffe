@@ -4,68 +4,61 @@ export function Story() {
   return (
     <section
       id="story"
-      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-10 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        Vår historia
-      </h2>
-      <div className="grid gap-10 md:grid-cols-2 md:items-start">
-        <div className="space-y-4">
-          <h3 className="font-serif text-2xl font-semibold text-[var(--foreground)]">
-            Hur vi träffades
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Our Story
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
+      <div className="grid gap-12 md:grid-cols-2 md:items-start">
+        <div className="space-y-5">
+          <h3 className="font-serif text-3xl font-light text-[var(--foreground)]">
+            How We Met
           </h3>
-          <div className="space-y-4 text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_85%,white)]">
+          <div className="space-y-5 text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
             <p>
-              Allt började på en padelbana. Det var där vi träffades för första
-              gången – men det krävdes faktiskt några matcher till innan vi
-              verkligen fick upp ögonen för varandra.
+              It all began on a paddle court. That's where we first met – though it took a few more matches before we truly noticed each other.
             </p>
             <p>
-              Som många av er vet kommer vi från samma hemtrakter och har
-              sannolikt korsat varandras vägar många gånger tidigare utan att
-              riktigt prata. Kanske för att Kristoffer är två år yngre än Maja,
-              eller så var det helt enkelt inte rätt tid då.
+              As many of you know, we come from the same part of the country and likely crossed paths many times before without really talking. Perhaps because Kristoffer is two years younger than Maja, or perhaps it simply wasn't the right time.
             </p>
             <p>
-              När det väl blev vi två gick allt snabbt. Mycket har hänt på kort
-              tid – Kristoffer flyttade från Sölvesborg till Malmö, vi hittade
-              vårt första hem tillsammans och skapade vår egen vardag.
+              When it finally happened, everything moved quickly. So much has changed in such a short time – Kristoffer moved from Sölvesborg to Malmö, we found our first home together, and created our life.
             </p>
           </div>
         </div>
 
-        <div className="space-y-4">
-          <h3 className="font-serif text-2xl font-semibold text-[var(--foreground)]">
-            Friariet
+        <div className="space-y-5">
+          <h3 className="font-serif text-3xl font-light text-[var(--foreground)]">
+            The Proposal
           </h3>
-          <div className="space-y-4 text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_85%,white)]">
+          <div className="space-y-5 text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
             <p>
-              Sedan kom den där extra minnesvärda dagen i Estepona, Spanien, när
-              Kristoffer friade. Därför känns det extra speciellt att gifta sig
-              i Spanien – på en plats som redan betyder så mycket för oss.
+              Then came that unforgettable day in Estepona, Spain, when Kristoffer proposed. That's why getting married in Spain feels extra special – it's a place that already means so much to us.
             </p>
             <p>
-              Nu vill vi bjuda in er att fira starten på vårt nästa kapitel
-              tillsammans.
+              Now we want to invite you to celebrate the beginning of our next chapter together in the same place where our engagement story began.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <div className="relative h-64 overflow-hidden rounded-2xl">
+      <div className="grid gap-8 md:grid-cols-2 mt-12">
+        <div className="relative h-72 overflow-hidden rounded-lg shadow-md">
           <Image
             src="/story-couple-romantic.jpg"
-            alt="Hur vi träffades"
+            alt="How we met"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
-        <div className="relative h-64 overflow-hidden rounded-2xl">
+        <div className="relative h-72 overflow-hidden rounded-lg shadow-md">
           <Image
             src="/story-engagement-spain.jpg"
-            alt="Friariet i Spanien"
+            alt="The proposal in Spain"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
