@@ -61,7 +61,7 @@ export function Schedule() {
             <div className="flex-1 pt-0.5">
               <h3 className="font-serif text-xl font-light text-[var(--foreground)]">
                 {event.title}
-                  </h3>
+              </h3>
               <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]/65">
                 {event.description}
               </p>
