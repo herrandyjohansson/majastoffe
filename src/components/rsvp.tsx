@@ -23,8 +23,10 @@ export function Rsvp() {
           action={FORMSPREE_ENDPOINT}
           method="POST"
           className="space-y-6"
+          autoComplete="off"
+          suppressHydrationWarning
         >
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2" suppressHydrationWarning>
             <div className="space-y-1.5">
               <label
                 htmlFor="full_name"
