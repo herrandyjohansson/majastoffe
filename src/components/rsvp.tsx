@@ -1,24 +1,12 @@
 'use client';
 
+import { useEffect, useState } from 'react';
+
 const FORMSPREE_ENDPOINT = "#"; // Replace with your Formspree endpoint when ready
 
-export function Rsvp() {
+function RsvpForm() {
   return (
-    <section
-      id="rsvp"
-      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
-    >
-      <div>
-        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
-          Kindly Request Your Response
-        </h2>
-        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
-      </div>
-      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)] max-w-xl">
-        Please let us know if you can join us by <strong>September 1st, 2026</strong>.
-      </p>
-
-      <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_99%,white)]/95 p-6 shadow-md ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)] md:p-8">
+    <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_99%,white)]/95 p-6 shadow-md ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)] md:p-8">
         <form
           action={FORMSPREE_ENDPOINT}
           method="POST"
@@ -123,6 +111,38 @@ export function Rsvp() {
           </button>
         </form>
       </div>
+  );
+}
+
+export function Rsvp() {
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  return (
+    <section
+      id="rsvp"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
+    >
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Kindly Request Your Response
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
+      <p className="text-base leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)] max-w-xl">
+        Please let us know if you can join us by <strong>September 1st, 2026</strong>.
+      </p>
+
+      {isHydrated ? (
+        <RsvpForm />
+      ) : (
+        <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_99%,white)]/95 p-6 shadow-md ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)] md:p-8">
+          <p className="text-sm text-[color-mix(in_oklab,var(--foreground)_75%,white)]">Loading form...</p>
+        </div>
+      )}
 
       <div className="rounded-2xl bg-[color-mix(in_oklab,var(--secondary)_28%,white)]/60 p-6 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)]">
         <p className="text-sm text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
