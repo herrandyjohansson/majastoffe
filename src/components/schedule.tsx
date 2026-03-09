@@ -25,25 +25,33 @@ export function Schedule() {
   return (
     <section
       id="schedule"
-      className="mt-16 space-y-6 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        Schema för bröllopsdagen
-      </h2>
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Wedding Day Schedule
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
       <div className="space-y-6">
-        {events.map((event) => (
+        {events.map((event, index) => (
           <div
             key={event.time}
-            className="grid gap-4 sm:grid-cols-[110px_1fr] sm:items-start"
+            className="flex gap-6 sm:gap-8 items-start"
           >
-            <div className="text-sm font-medium text-[color-mix(in_oklab,var(--foreground)_70%,white)]">
-              {event.time}
+            <div className="flex flex-col items-center gap-2">
+              <div className="text-sm font-semibold text-[var(--primary)] font-serif tracking-wide">
+                {event.time}
+              </div>
+              {index < events.length - 1 && (
+                <div className="w-px h-12 bg-gradient-to-b from-[var(--primary)]/50 to-transparent" />
+              )}
             </div>
-            <div className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-5 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)]">
-              <h3 className="font-serif text-base font-semibold text-[var(--foreground)]">
+            <div className="pb-4 pt-1 flex-1">
+              <h3 className="font-serif text-lg font-light text-[var(--foreground)]">
                 {event.title}
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
+              <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_75%,white)]">
                 {event.description}
               </p>
             </div>

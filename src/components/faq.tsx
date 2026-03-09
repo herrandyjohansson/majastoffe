@@ -37,43 +37,46 @@ const faqs = [
 ];
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <section
       id="faq"
-      className="mt-16 space-y-6 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        FAQ
-      </h2>
-      <div className="space-y-3">
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Frequently Asked Questions
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
+      <div className="space-y-2 max-w-2xl">
         {faqs.map((item, index) => {
           const isOpen = index === openIndex;
 
           return (
             <div
               key={item.question}
-              className="overflow-hidden rounded-2xl border border-[color-mix(in_oklab,var(--primary)_25%,transparent)] bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 shadow-sm"
+              className="border-b border-[color-mix(in_oklab,var(--primary)_20%,transparent)] transition-colors"
             >
               <button
                 type="button"
-                className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left sm:px-5 sm:py-4"
+                className="flex w-full items-center justify-between gap-4 py-5 text-left hover:text-[var(--primary)] transition-colors"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 aria-expanded={isOpen}
               >
-                <span className="text-sm font-semibold text-[var(--foreground)]">
+                <span className="font-serif text-base font-light text-[var(--foreground)]">
                   {item.question}
                 </span>
                 <ChevronDown
-                  className={`h-4 w-4 flex-shrink-0 text-[color-mix(in_oklab,var(--foreground)_70%,white)] transition-transform ${
+                  className={`h-4 w-4 flex-shrink-0 text-[var(--primary)] transition-transform ${
                     isOpen ? "rotate-180" : "rotate-0"
                   }`}
                   aria-hidden="true"
                 />
               </button>
               {isOpen && (
-                <div className="border-t border-[color-mix(in_oklab,var(--primary)_18%,transparent)] px-4 py-3 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_82%,white)] sm:px-5 sm:py-4">
+                <div className="pb-5 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_75%,white)]">
                   <p>{item.answer}</p>
                 </div>
               )}

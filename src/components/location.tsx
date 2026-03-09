@@ -2,47 +2,50 @@ export function Location() {
   return (
     <section
       id="location"
-      className="mt-16 space-y-6 border-t border-[color-mix(in_oklab,var(--primary)_20%,transparent)] pt-12"
+      className="mt-16 space-y-8 border-t border-[color-mix(in_oklab,var(--primary)_25%,transparent)] pt-12"
     >
-      <h2 className="text-sm font-semibold uppercase tracking-[0.3em] text-[var(--accent)]">
-        Plats &amp; vägbeskrivning
-      </h2>
+      <div>
+        <h2 className="text-xs font-semibold uppercase tracking-[0.4em] text-[var(--accent)] mb-2">
+          Location &amp; Directions
+        </h2>
+        <div className="h-px bg-gradient-to-r from-[var(--primary)] to-transparent w-12" />
+      </div>
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)]">
-          <h3 className="font-serif text-lg font-semibold text-[var(--foreground)]">
-            Vigseln
+        <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)]">
+          <h3 className="font-serif text-xl font-light text-[var(--foreground)]">
+            The Ceremony
           </h3>
-          <p className="mt-2 text-sm text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
+          <p className="mt-3 text-sm text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
             Castillo de Monda
           </p>
           <p className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_70%,white)]">
             29110 Monda, Málaga, Spain
           </p>
         </div>
-        <div className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)]">
-          <h3 className="font-serif text-lg font-semibold text-[var(--foreground)]">
-            Festen
+        <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)]">
+          <h3 className="font-serif text-xl font-light text-[var(--foreground)]">
+            The Reception
           </h3>
-          <p className="mt-2 text-sm text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
-            Direkt efter vigseln på samma plats
+          <p className="mt-3 text-sm text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
+            Directly following the ceremony at the same venue
           </p>
           <p className="mt-1 text-sm text-[color-mix(in_oklab,var(--foreground)_70%,white)]">
-            Middag serveras under kvällen
+            Dinner will be served throughout the evening
           </p>
         </div>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)]">
-          <h4 className="text-sm font-semibold text-[var(--foreground)]">Parkering</h4>
-          <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
-            Parkering finns vid venue om du hyr bil.
+        <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)]">
+          <h4 className="font-serif text-base font-light text-[var(--foreground)]">Parking</h4>
+          <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
+            Ample parking is available at the venue for those arriving by car.
           </p>
         </div>
-        <div className="rounded-2xl bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 shadow-sm ring-1 ring-[color-mix(in_oklab,var(--primary)_25%,transparent)]">
-          <h4 className="text-sm font-semibold text-[var(--foreground)]">Väder</h4>
-          <p className="mt-2 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_82%,white)]">
-            Räkna med varma kvällar — ta gärna med något lätt om det blåser.
+        <div className="rounded-lg bg-[color-mix(in_oklab,var(--background)_98%,white)]/95 p-6 ring-1 ring-[color-mix(in_oklab,var(--primary)_20%,transparent)]">
+          <h4 className="font-serif text-base font-light text-[var(--foreground)]">Weather</h4>
+          <p className="mt-3 text-sm leading-relaxed text-[color-mix(in_oklab,var(--foreground)_80%,white)]">
+            Expect warm summer evenings — a light wrap is recommended for the evening.
           </p>
         </div>
       </div>
