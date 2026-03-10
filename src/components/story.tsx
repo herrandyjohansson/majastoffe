@@ -18,8 +18,8 @@ export function Story() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative aspect-[4/5] overflow-hidden">
           <Image
-            src="/story-couple-romantic.jpg"
-            alt="Hur vi träffades"
+            src="/paddleball.jpg"
+            alt="Padel - sporten där vi träffades"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -65,7 +65,7 @@ export function Story() {
         
         <div className="relative aspect-[4/5] overflow-hidden lg:order-2">
           <Image
-            src="/story-beach-spain.jpg"
+            src="/story-engagement.jpg"
             alt="Strand i soliga södra Spanien"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

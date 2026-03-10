@@ -7,7 +7,7 @@ export function Hero() {
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
       <Image
-        src="/hero-wedding-spain.jpg"
+        src="/hero-new.jpg"
         alt="Maja och Kristoffers bröllopsceremoni"
         fill
         priority
