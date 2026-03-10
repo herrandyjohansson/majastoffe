@@ -4,13 +4,13 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const sections = [
-  { label: "Home", href: "#home" },
-  { label: "Our Story", href: "#story" },
-  { label: "Schedule", href: "#schedule" },
-  { label: "Location", href: "#location" },
-  { label: "Stay", href: "#accommodation" },
+  { label: "Hem", href: "#home" },
+  { label: "Vår historia", href: "#story" },
+  { label: "Schema", href: "#schedule" },
+  { label: "Plats", href: "#location" },
+  { label: "Boende", href: "#accommodation" },
   { label: "FAQ", href: "#faq" },
-  { label: "RSVP", href: "#rsvp" },
+  { label: "OSA", href: "#rsvp" },
 ];
 
 export function Header() {
@@ -25,7 +25,7 @@ export function Header() {
           </span>
           <span className="hidden h-4 w-px bg-[var(--primary)]/40 lg:block" />
           <span className="hidden text-[11px] uppercase tracking-[0.2em] text-[var(--accent)] lg:inline">
-            September 9, 2027
+            9 september 2027
           </span>
         </a>
 
@@ -47,7 +47,7 @@ export function Header() {
           onClick={() => setOpen((prev) => !prev)}
           aria-label={open ? "Close menu" : "Open menu"}
         >
-          <span>Menu</span>
+          <span>Meny</span>
           {open ? (
             <X className="h-5 w-5" aria-hidden="true" />
           ) : (

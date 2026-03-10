@@ -6,13 +6,13 @@ export function Location() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          The Venue
+          Lokalen
         </p>
         <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
           Castillo de Monda
         </h2>
         <p className="mt-4 text-sm text-[var(--foreground)]/65">
-          29110 Monda, Málaga, Spain
+          29110 Monda, Málaga, Spanien
         </p>
       </div>
 
@@ -33,34 +33,34 @@ export function Location() {
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
         <div className="text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Ceremony
+            Ceremoni
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            At the castle courtyard
+            I slottets innergård
           </p>
         </div>
         <div className="text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Reception
+            Fest
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            Same venue, dinner and dancing
+            Samma lokal, middag och dans
           </p>
         </div>
         <div className="text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Airport
+            Flygplats
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            Málaga (AGP) – 45 min drive
+            Málaga (AGP) – 45 min körning
           </p>
         </div>
         <div className="text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Weather
+            Väder
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            Warm evenings, light wrap advised
+            Varma kvällar, lätt sjal rekommenderas
           </p>
         </div>
       </div>

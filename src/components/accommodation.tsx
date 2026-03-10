@@ -3,28 +3,28 @@ import Image from "next/image";
 const hotels = [
   {
     name: "Castillo de Monda",
-    subtitle: "On-site accommodation",
-    rate: "From €80 / night",
+    subtitle: "Bo på plats",
+    rate: "Från €80 / natt",
     description:
-      "Stay at the castle and enjoy the full weekend experience. Breakfast included.",
-    code: "Coming soon",
+      "Bo på slottet och njut av hela helgen. Frukost ingår.",
+    code: "Kommer snart",
     image: "/hotel-castillo-monda.jpg",
   },
   {
-    name: "Nearby Hotels",
-    subtitle: "Alternative options",
-    rate: "Various prices",
+    name: "Närliggande Hotell",
+    subtitle: "Alternativa alternativ",
+    rate: "Varierande priser",
     description:
-      "Prefer somewhere different? Several quality hotels are within a short drive.",
+      "Föredrar du någon annanstans? Flera kvalitetshotell finns inom kort köravstånd.",
     code: "TBD",
     image: "/hotel-alternative.jpg",
   },
   {
-    name: "Marbella Area",
-    subtitle: "Beach & luxury",
-    rate: "Various prices",
+    name: "Marbella-området",
+    subtitle: "Strand & lyx",
+    rate: "Varierande priser",
     description:
-      "Combine the wedding weekend with beach time – Marbella is just 30 minutes away.",
+      "Kombinera bröllopshelgen med strandhäng – Marbella är bara 30 minuter bort.",
     code: "TBD",
     image: "/hotel-marbella.jpg",
   },
@@ -38,13 +38,13 @@ export function Accommodation() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          Where to Stay
+          Boende
         </p>
         <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
-          Accommodation
+          Var bo
         </h2>
         <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-[var(--foreground)]/65">
-          We recommend staying at the castle to make the most of the weekend, but several nearby options are also available.
+          Vi rekommenderar att bo på slottet för att få ut mesta möjliga av helgen, men flera närliggande alternativ finns också tillgängliga.
         </p>
       </div>
 
@@ -84,10 +84,10 @@ export function Accommodation() {
       <div className="mt-12 grid gap-6 border-t border-[var(--muted)] pt-12 md:grid-cols-3">
         <div>
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Getting There
+            Hitta hit
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            Fly into Málaga Airport (AGP), then a 45-minute drive to Monda.
+            Flyg till Málaga Airport (AGP), sedan 45 minuters körning till Monda.
           </p>
         </div>
         <div>
@@ -95,15 +95,15 @@ export function Accommodation() {
             Transport
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            We recommend renting a car to explore the beautiful Andalusian region.
+            Vi rekommenderar att hyra bil för att utforska den vackra Andalusiska regionen.
           </p>
         </div>
         <div>
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            Questions?
+            Frågor?
           </h4>
           <p className="text-sm text-[var(--foreground)]/75">
-            Reach out if you need help with accommodation or travel arrangements.
+            Kontakta oss om du behöver hjälp med boende eller researrangemang.
           </p>
         </div>
       </div>

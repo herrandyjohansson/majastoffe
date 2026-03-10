@@ -1,23 +1,23 @@
 const events = [
   {
-    time: "4:00 PM",
-    title: "Welcome Drinks",
-    description: "Arrive, unwind, and enjoy a refreshing welcome cocktail.",
+    time: "16:00",
+    title: "Välkomstdrinkar",
+    description: "Anlända, slappna av och njut av en uppfriskande välkomstcocktail.",
   },
   {
-    time: "4:45 PM",
-    title: "Ceremony",
-    description: "Join us as we say I do at Castillo de Monda.",
+    time: "16:45",
+    title: "Ceremoni",
+    description: "Följ med oss när vi säger ja på Castillo de Monda.",
   },
   {
-    time: "6:30 PM",
-    title: "Dinner & Toasts",
-    description: "A festive dinner followed by heartfelt speeches.",
+    time: "18:30",
+    title: "Middag & Tal",
+    description: "En festlig middag följt av hjärtliga tal.",
   },
   {
-    time: "9:30 PM",
-    title: "Dancing",
-    description: "The dance floor opens – let's celebrate together.",
+    time: "21:30",
+    title: "Dans",
+    description: "Dansgolvet öppnas – låt oss fira tillsammans.",
   },
 ];
 
@@ -29,10 +29,10 @@ export function Schedule() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          The Day
+          Dagen
         </p>
         <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
-          Wedding Schedule
+          Bröllopsschema
         </h2>
       </div>
 

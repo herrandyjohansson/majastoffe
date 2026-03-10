@@ -5,34 +5,34 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is the dress code?",
+    question: "Vad är klädkoden?",
     answer:
-      "Details will be confirmed closer to the wedding. Expect a festive summer evening in the Spanish warmth – we'll share more about colors and style soon.",
+      "Detaljer bekräftas närmare bröllopet. Räkna med en festlig sommarkväll i spansk värme – vi delar snart mer om färger och stil.",
   },
   {
-    question: "Is there a gift registry?",
+    question: "Finns det en önskelista?",
     answer:
-      "Your presence in Spain is the greatest gift we could ask for. Other gifts are not expected.",
+      "Er närvaro i Spanien är den finaste gåvan vi kan önska oss. Andra presenter förväntas inte.",
   },
   {
-    question: "Can I bring a plus one?",
+    question: "Kan jag ta med en plus one?",
     answer:
-      "If your invitation includes a plus one, you are warmly welcome to bring them. If you're unsure, please reach out and we'll confirm.",
+      "Om din inbjudan inkluderar en plus one är du varmt välkommen att ta med den personen. Är du osäker, kontakta oss så bekräftar vi.",
   },
   {
-    question: "Are children invited?",
+    question: "Är barn bjudna?",
     answer:
-      "This time we're keeping the celebration adults-only so everyone can relax and enjoy the entire evening together.",
+      "Den här gången håller vi firandet vuxet så att alla kan slappna av och njuta av hela kvällen tillsammans.",
   },
   {
-    question: "Are there vegetarian/vegan options?",
+    question: "Finns det vegetariska/veganska alternativ?",
     answer:
-      "Yes – we'll ensure there are options for common dietary preferences. Please note your requirements in your RSVP.",
+      "Ja – vi ser till att det finns alternativ för vanliga kostönskemål. Vänligen notera dina behov i din OSA.",
   },
   {
-    question: "What if I have allergies?",
+    question: "Vad händer om jag har allergier?",
     answer:
-      "Please include allergies and dietary requirements in your RSVP so we can coordinate with the venue.",
+      "Vänligen inkludera allergier och kostönskemål i din OSA så att vi kan koordinera med lokalen.",
   },
 ];
 
@@ -46,7 +46,7 @@ export function FAQ() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          Questions
+          Frågor
         </p>
         <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
           FAQ

@@ -8,10 +8,10 @@ export function Story() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          Our Story
+          Vår historia
         </p>
         <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
-          How it all began
+          Hur allt började
         </h2>
       </div>
 
@@ -19,7 +19,7 @@ export function Story() {
         <div className="relative aspect-[4/5] overflow-hidden">
           <Image
             src="/story-couple-romantic.jpg"
-            alt="How we met"
+            alt="Hur vi träffades"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -29,17 +29,17 @@ export function Story() {
         <div className="flex flex-col justify-center space-y-8">
           <div>
             <h3 className="mb-4 font-serif text-2xl font-light text-[var(--foreground)]">
-              The Beginning
+              Hur vi träffades
             </h3>
             <div className="space-y-4 text-[15px] leading-relaxed text-[var(--foreground)]/75">
               <p>
-                It all began on a paddle court. That's where we first met – though it took a few more matches before we truly noticed each other.
+                Det började på en paddlecourt. Det var där vi sågs för första gången – även om det tog några matcher innan vi verkligen lade märke till varandra.
               </p>
               <p>
-                As many of you know, we come from the same part of the country and likely crossed paths many times before without really talking. Perhaps because Kristoffer is two years younger than Maja, or perhaps it simply wasn't the right time.
+                Som många av er vet kommer vi från samma del av landet och har säkert korsat varandras vägar många gånger tidigare utan att riktigt prata. Kanske för att Kristoffer är två år yngre än Maja, eller kanske helt enkelt för att det inte var rätt tid.
               </p>
               <p>
-                When it finally happened, everything moved quickly. So much has changed in such a short time – Kristoffer moved from Sölvesborg to Malmö, we found our first home together, and created our life.
+                När det väl hände gick allt snabbt. Så mycket har förändrats på kort tid – Kristoffer flyttade från Sölvesborg till Malmö, vi hittade vårt första hem tillsammans och skapade vårt liv.
               </p>
             </div>
           </div>
@@ -50,14 +50,14 @@ export function Story() {
         <div className="flex flex-col justify-center space-y-8 lg:order-1">
           <div>
             <h3 className="mb-4 font-serif text-2xl font-light text-[var(--foreground)]">
-              The Proposal
+              Friariet
             </h3>
             <div className="space-y-4 text-[15px] leading-relaxed text-[var(--foreground)]/75">
               <p>
-                Then came that unforgettable day in Estepona, Spain, when Kristoffer proposed. That's why getting married in Spain feels extra special – it's a place that already means so much to us.
+                Sedan kom den oförglömliga dagen i Estepona, Spanien, när Kristoffer friade. Därför känns det extra speciellt att gifta sig i Spanien – det är en plats som redan betyder så mycket för oss.
               </p>
               <p>
-                Now we want to invite you to celebrate the beginning of our next chapter together in the same place where our engagement story began.
+                Nu vill vi bjuda in er att fira början på vårt nästa kapitel tillsammans på samma plats där vår förlovningshistoria började.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export function Story() {
         <div className="relative aspect-[4/5] overflow-hidden lg:order-2">
           <Image
             src="/story-engagement-spain.jpg"
-            alt="The proposal in Spain"
+            alt="Friariet i Spanien"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
