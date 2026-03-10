@@ -17,7 +17,7 @@ const hotels = [
     description:
       "Föredrar du någon annanstans? Flera kvalitetshotell finns inom kort köravstånd.",
     code: "TBD",
-    image: "/hotel-alternative.jpg",
+    image: "/hotel-nearby.jpg",
   },
   {
     name: "Marbella-området",
