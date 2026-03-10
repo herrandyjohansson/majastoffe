@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Location() {
   return (
     <section
@@ -14,6 +16,16 @@ export function Location() {
         <p className="mt-4 text-sm text-[var(--foreground)]/65">
           29110 Monda, Málaga, Spanien
         </p>
+      </div>
+
+      <div className="relative mb-8 aspect-[16/9] overflow-hidden">
+        <Image
+          src="/location-castillo-monda.jpg"
+          alt="Castillo de Monda"
+          fill
+          sizes="100vw"
+          className="object-cover"
+        />
       </div>
 
       <div className="overflow-hidden">
