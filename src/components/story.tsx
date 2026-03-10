@@ -65,8 +65,8 @@ export function Story() {
         
         <div className="relative aspect-[4/5] overflow-hidden lg:order-2">
           <Image
-            src="/story-engagement-spain.jpg"
-            alt="Friariet i Spanien"
+            src="/story-beach-spain.jpg"
+            alt="Strand i soliga södra Spanien"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
