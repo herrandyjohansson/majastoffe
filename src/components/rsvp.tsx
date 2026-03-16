@@ -127,7 +127,7 @@ export function Rsvp() {
   return (
     <section
       id="rsvp"
-      className="border-t border-[var(--muted)] py-20"
+      className="py-20"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">

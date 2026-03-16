@@ -1,38 +1,34 @@
 "use client";
 
 import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
+import { MessageCircleQuestion, Plus, Minus } from "lucide-react";
+import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 const faqs = [
   {
-    question: "Vad är klädkoden?",
+    question: "Kan jag ta med barn?",
     answer:
-      "Detaljer bekräftas närmare bröllopet. Räkna med en festlig sommarkväll i spansk värme – vi delar snart mer om färger och stil.",
+      "Så här är det: barnen får stanna hemma, men vuxna får extra allt! Dans, paella, poolhäng och skratt – vi lovar att fylla helgen med minnen som gör barnen lite avundsjuka.",
   },
   {
-    question: "Finns det en önskelista?",
+    question: "Finns det pool på hotellet?",
     answer:
-      "Er närvaro i Spanien är den finaste gåvan vi kan önska oss. Andra presenter förväntas inte.",
+      "Ja, poolen väntar på er! Så glöm inte badkläder om du vill ta ett dopp eller bara ta det lugnt i solen.",
   },
   {
-    question: "Kan jag ta med en plus one?",
+    question: "Finns parkering?",
     answer:
-      "Om din inbjudan inkluderar en plus one är du varmt välkommen att ta med den personen. Är du osäker, kontakta oss så bekräftar vi.",
+      "Absolut – om du hyr bil finns det plats att parkera på hotellet.",
   },
   {
-    question: "Är barn bjudna?",
+    question: "Kan man hålla tal?",
     answer:
-      "Den här gången håller vi firandet vuxet så att alla kan slappna av och njuta av hela kvällen tillsammans.",
+      "Självklart! Vill du hålla ett tal, meddela gärna vår toastmaster i förväg så vi kan planera kvällens program.",
   },
   {
-    question: "Finns det vegetariska/veganska alternativ?",
+    question: "Vad önskar ni er i present?",
     answer:
-      "Ja – vi ser till att det finns alternativ för vanliga kostönskemål. Vänligen notera dina behov i din OSA.",
-  },
-  {
-    question: "Vad händer om jag har allergier?",
-    answer:
-      "Vänligen inkludera allergier och kostönskemål i din OSA så att vi kan koordinera med lokalen.",
+      "Vår största önskan är att ni flyger ner till Spanien och spenderar dessa dagar med oss. Det blir den allra bästa presenten vi kan tänka oss! Övriga presenter undanbedes.",
   },
 ];
 
@@ -42,17 +38,14 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="border-t border-[var(--muted)] py-20"
+      className="py-20"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
           Frågor
         </p>
-        <h2 className="font-serif text-4xl font-light text-[var(--foreground)] md:text-5xl">
-          FAQ
-        </h2>
+        <DecorativeHeartDivider />
       </div>
-
       <div className="mx-auto max-w-2xl">
         {faqs.map((item, index) => {
           const isOpen = index === openIndex;
@@ -60,15 +53,15 @@ export function FAQ() {
           return (
             <div
               key={item.question}
-              className="border-b border-[var(--muted)]"
+              className="group transition-colors hover:bg-white/40"
             >
               <button
                 type="button"
-                className="flex w-full items-center justify-between gap-6 py-6 text-left"
+                className="flex w-full items-center justify-between gap-6 py-6 text-left transition-colors group-hover:text-[var(--foreground)]"
                 onClick={() => setOpenIndex(isOpen ? null : index)}
                 aria-expanded={isOpen}
               >
-                <span className="text-[15px] font-medium text-[var(--foreground)]">
+                <span className="text-[15px] font-medium text-[var(--foreground)]/90">
                   {item.question}
                 </span>
                 {isOpen ? (

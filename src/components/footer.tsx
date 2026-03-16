@@ -1,6 +1,9 @@
+import { Heart, Sparkles } from "lucide-react";
+import { DecorativeHeartDivider } from "./decorative-heart-divider";
+
 export function Footer() {
   return (
-    <footer className="border-t border-[var(--muted)] py-16">
+    <footer className="bg-white/35 py-16">
       <div className="mb-12 text-center">
         <p className="font-serif text-3xl font-light text-[var(--foreground)]">
           M &amp; K
@@ -9,6 +12,8 @@ export function Footer() {
           9 september 2027
         </p>
       </div>
+
+      <DecorativeHeartDivider className="mb-10" />
 
       <div className="flex flex-wrap justify-center gap-8 text-[11px] font-medium uppercase tracking-[0.15em] text-[var(--foreground)]/70">
         <a href="#home" className="hover:text-[var(--foreground)]">Hem</a>
@@ -22,7 +27,9 @@ export function Footer() {
 
       <div className="mt-12 text-center">
         <p className="font-serif text-lg italic text-[var(--foreground)]/70">
+          <Heart className="mr-1 inline h-4 w-4 text-[var(--accent)]/80" />
           Med kärlek, Maja &amp; Kristoffer
+          <Sparkles className="ml-1 inline h-4 w-4 text-[var(--accent)]/80" />
         </p>
       </div>
 
