@@ -64,42 +64,58 @@ export function Location() {
         />
       </div>
 
-      <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <div className="lux-card rounded-2xl p-5 text-center">
-          <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            <MapPin className="mr-1 inline h-4 w-4" />
-            Ceremoni
-          </h4>
-          <p className="text-sm text-[var(--foreground)]/75">
-            I slottets innergård
-          </p>
+      <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="lux-card flex rounded-2xl p-5">
+          <div>
+            <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary)]/18 text-[var(--accent)]">
+              <MapPin className="h-4 w-4" />
+            </span>
+            <h4 className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
+              Ceremoni
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]/75">
+              I slottets innergård
+            </p>
+          </div>
         </div>
-        <div className="lux-card rounded-2xl p-5 text-center">
-          <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            <MapPin className="mr-1 inline h-4 w-4" />
-            Fest
-          </h4>
-          <p className="text-sm text-[var(--foreground)]/75">
-            Samma lokal, middag och dans
-          </p>
+        <div className="lux-card flex rounded-2xl p-5">
+          <div>
+            <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary)]/18 text-[var(--accent)]">
+              <MapPin className="h-4 w-4" />
+            </span>
+            <h4 className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
+              Fest
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]/75">
+              Samma lokal, middag och dans
+            </p>
+          </div>
         </div>
-        <div className="lux-card rounded-2xl p-5 text-center">
-          <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            <Plane className="mr-1 inline h-4 w-4" />
-            Flygplats
-          </h4>
-          <p className="text-sm text-[var(--foreground)]/75">
-            Málaga (AGP) – 45 min körning
-          </p>
+        <div className="lux-card flex rounded-2xl p-5">
+          <div>
+            <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary)]/18 text-[var(--accent)]">
+              <Plane className="h-4 w-4" />
+            </span>
+            <h4 className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
+              Flygplats
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]/75">
+              Málaga (AGP) – 45 min körning
+            </p>
+          </div>
         </div>
-        <div className="lux-card rounded-2xl p-5 text-center">
-          <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
-            <ParkingCircle className="mr-1 inline h-4 w-4" />
-            Parkering
-          </h4>
-          <p className="text-sm text-[var(--foreground)]/75">
-            Parkering finns vid hotellet
-          </p>
+        <div className="lux-card flex rounded-2xl p-5">
+          <div>
+            <span className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-full bg-[var(--primary)]/18 text-[var(--accent)]">
+              <ParkingCircle className="h-4 w-4" />
+            </span>
+            <h4 className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
+              Parkering
+            </h4>
+            <p className="mt-2 text-sm leading-relaxed text-[var(--foreground)]/75">
+              Parkering finns vid hotellet
+            </p>
+          </div>
         </div>
       </div>
     </section>

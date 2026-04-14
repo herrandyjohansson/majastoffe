@@ -5,6 +5,9 @@ export function Footer() {
   return (
     <footer className="mt-8 bg-gradient-to-b from-white/40 to-white/70 py-16 shadow-[0_-10px_30px_rgba(25,18,12,0.04)]">
       <div className="mb-12 text-center">
+        <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full border border-[var(--primary)]/40 bg-white/65 font-serif text-sm tracking-[0.2em] text-[var(--accent)]">
+          MK
+        </div>
         <p className="font-serif text-3xl font-light text-[var(--foreground)]">
           M &amp; K
         </p>

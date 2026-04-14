@@ -72,27 +72,20 @@ export function SiteIntro() {
         ))}
       </div>
 
-      <div className="relative px-6 text-center">
-        <p className="intro-overline text-xs uppercase tracking-[0.45em] text-[var(--accent)]/60">
+      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-6 text-center">
+        <p className="intro-overline text-[10px] uppercase tracking-[0.42em] text-[var(--accent)]/60 sm:text-xs">
           Bröllopshelg i Spanien
         </p>
-        <h1 className="intro-name intro-title-shimmer mt-6 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text font-serif font-light text-transparent">
-          <span className="block text-5xl sm:text-7xl md:text-8xl">Maja</span>
-          <span className="my-1 block text-3xl italic text-[var(--accent)]/55 sm:text-5xl">
-            &
+        <h1 className="intro-name intro-title-shimmer mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text font-serif font-light text-transparent sm:mt-6">
+          <span className="block leading-[1.04] text-5xl sm:text-7xl md:text-8xl">Maja</span>
+          <span className="my-3 inline-flex items-center justify-center rounded-full border border-[#b3263f]/28 bg-white/55 p-2 text-[#b3263f] shadow-[0_8px_24px_rgba(160,28,52,0.18)] sm:my-4">
+            <Heart className="intro-heart h-6 w-6 sm:h-7 sm:w-7" />
           </span>
-          <span className="block text-5xl sm:text-7xl md:text-8xl">Kristoffer</span>
+          <span className="block leading-[1.04] text-5xl sm:text-7xl md:text-8xl">Kristoffer</span>
         </h1>
-        <p className="intro-date mt-4 text-[11px] uppercase tracking-[0.28em] text-[var(--accent)]/52">
+        <p className="intro-date mt-5 text-[10px] uppercase tracking-[0.24em] text-[var(--accent)]/52 sm:mt-6 sm:text-[11px] sm:tracking-[0.28em]">
           8–10 september 2027 • Castillo de Monda
         </p>
-        <div className="mt-7 flex items-center justify-center gap-4">
-          <span className="intro-line h-px w-14 bg-[var(--accent)]/35" />
-          <span className="intro-heart-wrap inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#b3263f]/35 bg-white/45 shadow-[0_8px_28px_rgba(128,26,48,0.2)]">
-            <Heart className="intro-heart h-5 w-5 text-[#b3263f]" />
-          </span>
-          <span className="intro-line h-px w-14 bg-[var(--accent)]/35" />
-        </div>
       </div>
     </div>
   );

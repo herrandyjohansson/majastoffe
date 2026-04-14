@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const sections = [
@@ -15,6 +15,28 @@ const sections = [
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("#home");
+
+  useEffect(() => {
+    const ids = sections.map((s) => s.href.replace("#", ""));
+
+    const onScroll = () => {
+      const y = window.scrollY + 160;
+      let current = "#home";
+
+      for (const id of ids) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        if (y >= el.offsetTop) current = `#${id}`;
+      }
+
+      setActiveHref(current);
+    };
+
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--muted)]/70 bg-[var(--background)]/78 shadow-[0_8px_30px_rgba(20,14,10,0.06)] backdrop-blur-xl">
@@ -34,7 +56,11 @@ export function Header() {
             <a
               key={item.href}
               href={item.href}
-              className="relative text-[11px] font-medium uppercase tracking-[0.15em] text-[var(--foreground)]/70 transition-colors hover:text-[var(--foreground)] after:absolute after:bottom-[-8px] after:left-0 after:h-px after:w-0 after:bg-[var(--accent)] after:transition-all hover:after:w-full"
+              className={`relative text-[11px] font-medium uppercase tracking-[0.15em] transition-colors after:absolute after:bottom-[-8px] after:left-0 after:h-px after:bg-[var(--accent)] after:transition-all ${
+                activeHref === item.href
+                  ? "text-[var(--foreground)] after:w-full"
+                  : "text-[var(--foreground)]/70 after:w-0 hover:text-[var(--foreground)] hover:after:w-full"
+              }`}
             >
               {item.label}
             </a>

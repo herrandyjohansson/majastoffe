@@ -71,7 +71,7 @@ export function FAQ() {
                 )}
               </button>
               {isOpen && (
-                <div className="pb-6 text-sm leading-relaxed text-[var(--foreground)]/70">
+                <div className="animate-[fadeInUp_280ms_ease] pb-6 text-sm leading-relaxed text-[var(--foreground)]/70">
                   <p>{item.answer}</p>
                 </div>
               )}
