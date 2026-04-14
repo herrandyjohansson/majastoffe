@@ -17,7 +17,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--muted)]/70 bg-[var(--background)]/90 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 border-b border-[var(--muted)]/70 bg-[var(--background)]/78 shadow-[0_8px_30px_rgba(20,14,10,0.06)] backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
         <a href="#home" className="group flex items-center gap-4">
           <span className="font-serif text-2xl font-light tracking-wide text-[var(--foreground)]">

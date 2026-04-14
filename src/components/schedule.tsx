@@ -5,7 +5,7 @@ export function Schedule() {
   return (
     <section
       id="schedule"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -19,7 +19,7 @@ export function Schedule() {
       </div>
 
       <div className="mx-auto max-w-4xl space-y-8">
-        <div className="relative overflow-hidden rounded-2xl border border-[var(--muted)] bg-gradient-to-b from-white/80 to-white/55 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+        <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <Clock3 className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />
@@ -40,7 +40,7 @@ export function Schedule() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-2xl border border-[var(--muted)] bg-gradient-to-b from-white/80 to-white/55 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+        <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <PartyPopper className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />
@@ -72,7 +72,7 @@ export function Schedule() {
           </div>
         </div>
 
-        <div className="relative overflow-hidden rounded-2xl border border-[var(--muted)] bg-gradient-to-b from-white/80 to-white/55 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+        <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <Clock3 className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />

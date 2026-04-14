@@ -3,7 +3,7 @@ import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 export function Footer() {
   return (
-    <footer className="bg-white/35 py-16">
+    <footer className="mt-8 bg-gradient-to-b from-white/40 to-white/70 py-16 shadow-[0_-10px_30px_rgba(25,18,12,0.04)]">
       <div className="mb-12 text-center">
         <p className="font-serif text-3xl font-light text-[var(--foreground)]">
           M &amp; K

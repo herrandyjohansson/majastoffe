@@ -6,7 +6,7 @@ export function Location() {
   return (
     <section
       id="location"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -50,7 +50,7 @@ export function Location() {
         />
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-[var(--muted)] shadow-sm">
+      <div className="lux-card overflow-hidden rounded-2xl">
         <iframe
           title="Castillo de Monda"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3201.8183415169715!2d-4.837980924384629!3d36.63075907229592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72db984b99433b%3A0x21e1e888aaacc9a2!2sHotel%20-%20Restaurante%20Castillo%20De%20Monda!5e0!3m2!1sen!2sse!4v1772884692699!5m2!1sen!2sse"
@@ -65,7 +65,7 @@ export function Location() {
       </div>
 
       <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-        <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5 text-center">
+        <div className="lux-card rounded-2xl p-5 text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             <MapPin className="mr-1 inline h-4 w-4" />
             Ceremoni
@@ -74,7 +74,7 @@ export function Location() {
             I slottets innergård
           </p>
         </div>
-        <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5 text-center">
+        <div className="lux-card rounded-2xl p-5 text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             <MapPin className="mr-1 inline h-4 w-4" />
             Fest
@@ -83,7 +83,7 @@ export function Location() {
             Samma lokal, middag och dans
           </p>
         </div>
-        <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5 text-center">
+        <div className="lux-card rounded-2xl p-5 text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             <Plane className="mr-1 inline h-4 w-4" />
             Flygplats
@@ -92,7 +92,7 @@ export function Location() {
             Málaga (AGP) – 45 min körning
           </p>
         </div>
-        <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5 text-center">
+        <div className="lux-card rounded-2xl p-5 text-center">
           <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             <ParkingCircle className="mr-1 inline h-4 w-4" />
             Parkering

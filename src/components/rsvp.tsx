@@ -6,7 +6,7 @@ const FORMSPREE_ENDPOINT = "#"; // Replace with your Formspree endpoint when rea
 
 function RsvpForm() {
   return (
-    <div className="mx-auto max-w-xl">
+    <div className="mx-auto max-w-xl rounded-2xl border border-[var(--muted)]/85 bg-white/55 p-6 shadow-sm">
       <form
         action={FORMSPREE_ENDPOINT}
         method="POST"
@@ -127,7 +127,7 @@ export function Rsvp() {
   return (
     <section
       id="rsvp"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">

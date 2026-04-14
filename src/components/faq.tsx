@@ -38,7 +38,7 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -46,14 +46,14 @@ export function FAQ() {
         </p>
         <DecorativeHeartDivider />
       </div>
-      <div className="mx-auto max-w-2xl">
+      <div className="mx-auto max-w-2xl rounded-2xl border border-[var(--muted)]/80 bg-white/45 px-4 sm:px-6">
         {faqs.map((item, index) => {
           const isOpen = index === openIndex;
 
           return (
             <div
               key={item.question}
-              className="group transition-colors hover:bg-white/40"
+              className="group border-b border-[var(--muted)]/60 transition-colors last:border-b-0 hover:bg-white/45"
             >
               <button
                 type="button"

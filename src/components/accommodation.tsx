@@ -6,7 +6,7 @@ export function Accommodation() {
   return (
     <section
       id="accommodation"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -28,7 +28,7 @@ export function Accommodation() {
             className="object-cover transition-transform duration-700 hover:scale-[1.03]"
           />
         </div>
-        <div className="space-y-4 rounded-2xl border border-[var(--muted)] bg-gradient-to-b from-white/80 to-white/55 p-6 text-sm leading-relaxed text-[var(--foreground)]/75 shadow-sm">
+        <div className="lux-card space-y-4 rounded-2xl p-6 text-sm leading-relaxed text-[var(--foreground)]/75">
           <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
             <BedDouble className="mr-1 inline h-4 w-4" />
             Boendeinformation
@@ -54,16 +54,16 @@ export function Accommodation() {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-[var(--muted)] pt-12">
+      <div className="mt-12 pt-12">
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5">
+          <div className="lux-card rounded-2xl p-5">
             <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
               <Mic2 className="mr-1 inline h-4 w-4" />
               Toastmasters
             </h4>
             <p className="text-sm text-[var(--foreground)]/75">Info kommer</p>
           </div>
-          <div className="rounded-2xl border border-[var(--muted)]/70 bg-gradient-to-b from-white/75 to-white/45 p-5">
+          <div className="lux-card rounded-2xl p-5">
             <h4 className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-[var(--accent)]">
               <Shirt className="mr-1 inline h-4 w-4" />
               Klädkod

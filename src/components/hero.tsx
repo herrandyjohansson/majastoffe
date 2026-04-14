@@ -23,7 +23,7 @@ export function Hero() {
 
         <div className="relative z-10 flex min-h-screen w-full flex-col px-4 pb-10 pt-20 sm:px-6 sm:pt-24 md:px-8 md:pb-12">
           <div className="mx-auto flex w-full max-w-6xl flex-1">
-            <div className="flex w-full flex-1 flex-col rounded-2xl bg-black/20 px-5 py-7 text-center shadow-[0_20px_65px_rgba(0,0,0,0.35)] backdrop-blur-[1px] sm:rounded-3xl sm:px-9 sm:py-10">
+            <div className="flex w-full flex-1 flex-col rounded-2xl border border-white/20 bg-black/20 px-5 py-7 text-center shadow-[0_24px_80px_rgba(0,0,0,0.38)] backdrop-blur-[2px] sm:rounded-3xl sm:px-9 sm:py-10">
               <div className="flex flex-1 flex-col items-center justify-center">
                 <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/85 sm:text-sm">
                   Vi gifter oss!
@@ -86,8 +86,8 @@ export function Hero() {
 
       </section>
 
-      <section className="py-20">
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+      <section className="lux-section fade-in-up mx-auto mt-7 max-w-6xl px-6 py-20 lg:px-8">
+        <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
 
             <DecorativeHeartDivider />

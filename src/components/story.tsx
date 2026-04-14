@@ -6,7 +6,7 @@ export function Story() {
   return (
     <section
       id="story"
-      className="py-20"
+      className="lux-section fade-in-up px-6 py-20 lg:px-10"
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
@@ -19,7 +19,7 @@ export function Story() {
       </div>
 
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--muted)]/70">
           <Image
             src="/paddleball.jpg"
             alt="Padel - sporten där vi träffades"
@@ -78,7 +78,7 @@ export function Story() {
           </div>
         </div>
         
-        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md lg:order-2">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--muted)]/70 lg:order-2">
           <Image
             src="/story-engagement.jpg"
             alt="Strand i soliga södra Spanien"

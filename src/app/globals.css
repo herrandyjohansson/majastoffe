@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  /* Refined wedding color palette - warm neutrals */
-  --primary: #b8a088; /* Warm taupe/champagne */
-  --secondary: #f7f5f2; /* Warm ivory */
-  --accent: #6b5c4c; /* Deep bronze */
-  --background: #faf9f7; /* Soft cream */
-  --foreground: #1a1a1a; /* Rich black */
-  --muted: #e8e4df; /* Soft muted beige */
+  --primary: #b8a088;
+  --secondary: #f7f5f2;
+  --accent: #6b5c4c;
+  --background: #faf9f7;
+  --foreground: #1a1a1a;
+  --muted: #e8e4df;
 }
 
 @theme inline {
@@ -27,19 +26,230 @@ html {
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(184, 160, 136, 0.15), transparent 35%),
+    radial-gradient(circle at 85% 15%, rgba(107, 92, 76, 0.08), transparent 30%),
+    radial-gradient(circle at 50% 100%, rgba(184, 160, 136, 0.12), transparent 45%),
+    var(--background);
   color: var(--foreground);
   font-family: var(--font-lato), system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
 }
 
-/* Smooth transitions for interactive elements */
 a, button {
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
-/* Better text rendering */
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: rgba(107, 92, 76, 0.2);
+}
+
+.lux-section {
+  position: relative;
+  border-radius: 1.5rem;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.48));
+  box-shadow: 0 12px 40px rgba(36, 24, 16, 0.06);
+  backdrop-filter: blur(4px);
+}
+
+.lux-card {
+  border: 1px solid rgba(232, 228, 223, 0.95);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.86), rgba(255, 255, 255, 0.55));
+  box-shadow: 0 10px 28px rgba(28, 20, 14, 0.06);
+  transition: transform 240ms ease, box-shadow 240ms ease, border-color 240ms ease;
+}
+
+.lux-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184, 160, 136, 0.45);
+  box-shadow: 0 18px 40px rgba(28, 20, 14, 0.1);
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.7s ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-overline {
+  animation: introFadeUp 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 120ms both;
+}
+
+.intro-name {
+  animation: introFadeUp 1300ms cubic-bezier(0.2, 0.8, 0.2, 1) 260ms both;
+}
+
+.intro-date {
+  animation: introFadeUp 900ms cubic-bezier(0.2, 0.8, 0.2, 1) 920ms both;
+}
+
+.intro-line {
+  animation: introLineIn 900ms ease 400ms both;
+}
+
+.intro-heart-wrap {
+  animation: introHeartHalo 2s ease-in-out 600ms both;
+}
+
+.intro-heart {
+  animation: introHeartPulse 1.7s ease-in-out 700ms infinite;
+}
+
+.intro-hearts-group {
+  opacity: 0;
+  animation: introHeartsAppear 1100ms ease 1550ms forwards;
+}
+
+.intro-overlay-out {
+  animation: introOverlayOut 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.intro-stage {
+  animation: introStageZoom 5200ms ease-out both;
+}
+
+.intro-title-shimmer {
+  background-size: 200% auto;
+  animation:
+    introFadeUp 1300ms cubic-bezier(0.2, 0.8, 0.2, 1) 260ms both,
+    introShimmer 3200ms ease-in-out 1200ms 1;
+}
+
+.intro-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.08) 0.5px, transparent 0.5px);
+  background-size: 3px 3px;
+  opacity: 0.09;
+  mix-blend-mode: multiply;
+}
+
+.intro-vignette {
+  background: radial-gradient(circle at center, transparent 46%, rgba(47, 32, 19, 0.14) 100%);
+  opacity: 0.55;
+}
+
+@keyframes introFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes introLineIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0.2);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes introHeartPulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+@keyframes introHeartHalo {
+  0% {
+    box-shadow: 0 0 0 rgba(179, 38, 63, 0);
+    transform: scale(0.95);
+  }
+  35% {
+    box-shadow: 0 0 34px rgba(179, 38, 63, 0.28);
+  }
+  100% {
+    box-shadow: 0 0 12px rgba(179, 38, 63, 0.2);
+    transform: scale(1);
+  }
+}
+
+.intro-float-heart {
+  animation-name: introFloatHeart;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes introFloatHeart {
+  0% {
+    transform: translateY(0) translateX(0) scale(0.9);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.55;
+  }
+  60% {
+    transform: translateY(-46vh) translateX(7px) scale(1);
+    opacity: 0.42;
+  }
+  100% {
+    transform: translateY(-78vh) translateX(-7px) scale(1.08);
+    opacity: 0;
+  }
+}
+
+@keyframes introHeartsAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes introStageZoom {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.03);
+  }
+}
+
+@keyframes introShimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes introOverlayOut {
+  from {
+    opacity: 1;
+    transform: scale(1.03);
+    filter: blur(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.015);
+    filter: blur(4px);
+    visibility: hidden;
+  }
 }
