@@ -8,6 +8,7 @@ import { FAQ } from "../components/faq";
 import { Rsvp } from "../components/rsvp";
 import { Footer } from "../components/footer";
 import { SiteIntro } from "../components/site-intro";
+import { Reveal } from "../components/reveal";
 
 export default function Home() {
   return (
@@ -20,17 +21,39 @@ export default function Home() {
       <Header />
       <Hero />
       <main className="relative z-10 mx-auto max-w-6xl space-y-7 px-6 pb-8 lg:px-8">
-        <Story />
-        <div className="section-bridge" />
-        <Schedule />
-        <div className="section-bridge" />
-        <Location />
-        <div className="section-bridge" />
-        <Accommodation />
-        <div className="section-bridge" />
-        <FAQ />
-        <div className="section-bridge" />
-        <Rsvp />
+        <Reveal delayMs={40}>
+          <Story />
+        </Reveal>
+        <Reveal delayMs={80}>
+          <div className="section-bridge" />
+        </Reveal>
+        <Reveal delayMs={100}>
+          <Schedule />
+        </Reveal>
+        <Reveal delayMs={110}>
+          <div className="section-bridge" />
+        </Reveal>
+        <Reveal delayMs={120}>
+          <Location />
+        </Reveal>
+        <Reveal delayMs={130}>
+          <div className="section-bridge" />
+        </Reveal>
+        <Reveal delayMs={140}>
+          <Accommodation />
+        </Reveal>
+        <Reveal delayMs={160}>
+          <div className="section-bridge" />
+        </Reveal>
+        <Reveal delayMs={170}>
+          <FAQ />
+        </Reveal>
+        <Reveal delayMs={180}>
+          <div className="section-bridge" />
+        </Reveal>
+        <Reveal delayMs={200}>
+          <Rsvp />
+        </Reveal>
       </main>
       <Footer />
     </div>

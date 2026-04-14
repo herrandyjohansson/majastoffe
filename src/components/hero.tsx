@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CalendarDays, MapPin, Sparkles } from "lucide-react";
+import { CalendarDays, Heart, MapPin, Sparkles } from "lucide-react";
 import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 export function Hero() {
@@ -25,17 +25,15 @@ export function Hero() {
           <div className="mx-auto flex w-full max-w-6xl flex-1">
             <div className="flex w-full flex-1 flex-col rounded-2xl border border-white/20 bg-black/20 px-5 py-7 text-center shadow-[0_24px_80px_rgba(0,0,0,0.38)] backdrop-blur-[2px] sm:rounded-3xl sm:px-9 sm:py-10">
               <div className="flex flex-1 flex-col items-center justify-center">
-                <p className="text-xs font-medium uppercase tracking-[0.24em] text-white/85 sm:text-sm">
-                  Vi gifter oss!
+                <p className="text-[10px] font-medium uppercase tracking-[0.42em] text-white/72 sm:text-xs">
+                  Bröllopshelg i Spanien
                 </p>
-                <h1 className="mt-3 font-serif text-5xl font-light leading-[1.02] text-white sm:mt-4 sm:text-7xl md:text-8xl lg:text-9xl">
-                  Maja
-                </h1>
-                <p className="my-1.5 font-serif text-5xl italic text-white/80 sm:my-2 sm:text-7xl md:text-8xl">
-                  &amp;
-                </p>
-                <h1 className="font-serif text-5xl font-light leading-[1.02] text-white sm:text-7xl md:text-8xl lg:text-9xl">
-                  Kristoffer
+                <h1 className="wedding-name-stack mt-5 text-white sm:mt-6">
+                  <span className="wedding-name-line">Maja</span>
+                  <span className="wedding-name-heart-wrap">
+                    <Heart className="wedding-name-heart text-[#b3263f]" />
+                  </span>
+                  <span className="wedding-name-line">Kristoffer</span>
                 </h1>
                 <div className="mt-5 flex items-center justify-center gap-3 sm:mt-7 sm:gap-4">
                   <div className="h-px w-10 bg-white/35 sm:w-14" />
@@ -53,15 +51,18 @@ export function Hero() {
                     säger vi ja till varandra i Spanien och vi hoppas att ni vill
                     vara med och fira tillsammans med oss.
                   </p>
-                  <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/40 bg-black/25 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/90">
+                <div className="mt-5 grid w-full max-w-xl gap-2 sm:grid-cols-3">
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border border-white/40 bg-black/25 px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-white/92">
                       <CalendarDays className="h-3.5 w-3.5" aria-hidden="true" />
                       8–10 september 2027
                     </span>
-                    <span className="inline-flex items-center gap-1.5 rounded-full border border-white/40 bg-black/25 px-3 py-1 text-[10px] uppercase tracking-[0.18em] text-white/90">
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border border-white/40 bg-black/25 px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-white/92">
                       <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                       Castillo de Monda
                     </span>
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border border-white/40 bg-black/25 px-3 py-2 text-[10px] uppercase tracking-[0.18em] text-white/92">
+                    Bröllopshelg
+                  </span>
                   </div>
                 </div>
               </div>

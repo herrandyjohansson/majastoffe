@@ -76,12 +76,12 @@ export function SiteIntro() {
         <p className="intro-overline text-[10px] uppercase tracking-[0.42em] text-[var(--accent)]/60 sm:text-xs">
           Bröllopshelg i Spanien
         </p>
-        <h1 className="intro-name intro-title-shimmer mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text font-serif font-light text-transparent sm:mt-6">
-          <span className="block leading-[1.04] text-5xl sm:text-7xl md:text-8xl">Maja</span>
-          <span className="my-3 inline-flex items-center justify-center rounded-full border border-[#b3263f]/28 bg-white/55 p-2 text-[#b3263f] shadow-[0_8px_24px_rgba(160,28,52,0.18)] sm:my-4">
-            <Heart className="intro-heart h-6 w-6 sm:h-7 sm:w-7" />
+        <h1 className="intro-name intro-title-shimmer wedding-name-stack mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text text-transparent sm:mt-6">
+          <span className="wedding-name-line">Maja</span>
+          <span className="wedding-name-heart-wrap">
+            <Heart className="intro-heart wedding-name-heart" />
           </span>
-          <span className="block leading-[1.04] text-5xl sm:text-7xl md:text-8xl">Kristoffer</span>
+          <span className="wedding-name-line">Kristoffer</span>
         </h1>
         <p className="intro-date mt-5 text-[10px] uppercase tracking-[0.24em] text-[var(--accent)]/52 sm:mt-6 sm:text-[11px] sm:tracking-[0.28em]">
           8–10 september 2027 • Castillo de Monda

@@ -16,6 +16,7 @@ const sections = [
 export function Header() {
   const [open, setOpen] = useState(false);
   const [activeHref, setActiveHref] = useState("#home");
+  const [scrollProgress, setScrollProgress] = useState(0);
 
   useEffect(() => {
     const ids = sections.map((s) => s.href.replace("#", ""));
@@ -31,6 +32,11 @@ export function Header() {
       }
 
       setActiveHref(current);
+
+      const doc = document.documentElement;
+      const maxScroll = doc.scrollHeight - window.innerHeight;
+      const progress = maxScroll > 0 ? (window.scrollY / maxScroll) * 100 : 0;
+      setScrollProgress(Math.min(100, Math.max(0, progress)));
     };
 
     onScroll();
@@ -62,6 +68,9 @@ export function Header() {
                   : "text-[var(--foreground)]/70 after:w-0 hover:text-[var(--foreground)] hover:after:w-full"
               }`}
             >
+              {activeHref === item.href && (
+                <span className="mr-1 inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent)]/75 align-middle" />
+              )}
               {item.label}
             </a>
           ))}
@@ -79,6 +88,12 @@ export function Header() {
             <Menu className="h-5 w-5" aria-hidden="true" />
           )}
         </button>
+      </div>
+      <div className="absolute bottom-0 left-0 h-px w-full bg-[var(--muted)]/60">
+        <span
+          className="block h-px bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] transition-[width] duration-300"
+          style={{ width: `${scrollProgress}%` }}
+        />
       </div>
 
       {open && (
