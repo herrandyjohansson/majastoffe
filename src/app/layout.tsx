@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="sv">
       <body
         className={`${inter.variable} ${bodoni.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
+        suppressHydrationWarning
       >
         <script
           dangerouslySetInnerHTML={{
