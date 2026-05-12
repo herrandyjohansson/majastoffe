@@ -107,26 +107,59 @@ a, button {
 .wedding-name-heart-wrap {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 999px;
-  border: 1px solid rgba(179, 38, 63, 0.28);
-  background: rgba(255, 255, 255, 0.58);
-  padding: 0.5rem;
+  border: 1px solid rgba(179, 38, 63, 0.34);
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.42) 50%, rgba(255, 255, 255, 0.25) 75%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(248, 232, 236, 0.45));
+  padding: 0.58rem;
   color: #b3263f;
-  box-shadow: 0 8px 24px rgba(160, 28, 52, 0.18);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 10px 30px rgba(160, 28, 52, 0.24),
+    0 0 0 4px rgba(179, 38, 63, 0.09);
 }
 
 .wedding-name-heart {
   height: 1.65rem;
   width: 1.65rem;
+  fill: currentColor;
+  stroke-width: 1.8;
+  filter: drop-shadow(0 2px 5px rgba(160, 28, 52, 0.35));
+}
+
+.wedding-name-heart-wrap::before,
+.wedding-name-heart-wrap::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(179, 38, 63, 0.7);
+  box-shadow: 0 0 10px rgba(179, 38, 63, 0.32);
+}
+
+.wedding-name-heart-wrap::before {
+  top: 4px;
+  right: 5px;
+  height: 4px;
+  width: 4px;
+}
+
+.wedding-name-heart-wrap::after {
+  bottom: 5px;
+  left: 6px;
+  height: 3px;
+  width: 3px;
 }
 
 @media (min-width: 640px) {
   .wedding-name-heart-wrap {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 0.66rem;
   }
   .wedding-name-heart {
     height: 1.8rem;
@@ -157,15 +190,15 @@ a, button {
 }
 
 .intro-overline {
-  animation: introFadeUp 1200ms cubic-bezier(0.22, 0.8, 0.2, 1) 180ms both;
+  animation: introFadeUp 1000ms cubic-bezier(0.22, 0.8, 0.2, 1) 150ms both;
 }
 
 .intro-name {
-  animation: introFadeUp 1500ms cubic-bezier(0.22, 0.8, 0.2, 1) 320ms both;
+  animation: introFadeUp 1300ms cubic-bezier(0.22, 0.8, 0.2, 1) 280ms both;
 }
 
 .intro-date {
-  animation: introFadeUp 1100ms cubic-bezier(0.22, 0.8, 0.2, 1) 1050ms both;
+  animation: introFadeUp 1000ms cubic-bezier(0.22, 0.8, 0.2, 1) 850ms both;
 }
 
 .intro-line {
@@ -182,17 +215,44 @@ a, button {
 
 .intro-hearts-group {
   opacity: 0;
-  animation: introHeartsAppear 1300ms ease 1700ms forwards;
-}
-
-.intro-overlay-out {
-  animation: introOverlayOut 1300ms cubic-bezier(0.25, 0.85, 0.2, 1) forwards;
+  animation: introHeartsAppear 900ms ease 1300ms forwards;
 }
 
 .intro-stage {
   animation:
     introStageEnter 1200ms ease-out both,
-    introStageZoom 5200ms ease-out both;
+    introStageZoom 3500ms ease-out both;
+}
+
+.intro-stage.intro-overlay-out {
+  animation: introOverlayOut 1600ms cubic-bezier(0.4, 0.05, 0.2, 1) forwards;
+}
+
+.page-shell {
+  opacity: 1;
+}
+
+body[data-intro-state="active"] .page-shell {
+  opacity: 0;
+  transform: translateY(14px);
+  filter: blur(4px);
+}
+
+body[data-intro-state="exiting"] .page-shell {
+  animation: pageShellReveal 2600ms cubic-bezier(0.4, 0, 0.6, 1) both;
+}
+
+@keyframes pageShellReveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
 }
 
 .intro-title-shimmer {

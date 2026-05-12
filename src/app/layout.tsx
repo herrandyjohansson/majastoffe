@@ -30,6 +30,18 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${bodoni.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
       >
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{document.body.dataset.introState='active'}catch(e){}",
+          }}
+        />
+        <noscript>
+          <style>{`
+            [data-intro-overlay]{display:none!important}
+            .page-shell{opacity:1!important;transform:none!important;filter:none!important}
+          `}</style>
+        </noscript>
         {children}
       </body>
     </html>

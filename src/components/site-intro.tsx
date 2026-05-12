@@ -10,20 +10,24 @@ export function SiteIntro() {
   useEffect(() => {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
+    document.body.dataset.introState = "active";
 
     const exitTimer = window.setTimeout(() => {
       setIsExiting(true);
-    }, 4200);
+      document.body.style.overflow = originalOverflow;
+      document.body.dataset.introState = "exiting";
+    }, 3500);
 
     const hideTimer = window.setTimeout(() => {
       setIsVisible(false);
-      document.body.style.overflow = originalOverflow;
-    }, 5200);
+      delete document.body.dataset.introState;
+    }, 6100);
 
     return () => {
       window.clearTimeout(exitTimer);
       window.clearTimeout(hideTimer);
       document.body.style.overflow = originalOverflow;
+      delete document.body.dataset.introState;
     };
   }, []);
 
@@ -42,7 +46,8 @@ export function SiteIntro() {
 
   return (
     <div
-      className={`fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_50%_-8%,rgba(255,255,255,1),rgba(255,255,255,0.94)_35%,rgba(255,255,255,0.88)_64%),linear-gradient(180deg,#ffffff_0%,#fffdfb_48%,#fbf5ee_100%)] text-[var(--accent)] intro-stage ${
+      data-intro-overlay
+      className={`fixed inset-0 z-[100] overflow-hidden bg-[radial-gradient(circle_at_50%_-8%,rgba(255,255,255,1),rgba(255,255,255,0.94)_35%,rgba(255,255,255,0.88)_64%),linear-gradient(180deg,#ffffff_0%,#fffdfb_48%,#fbf5ee_100%)] text-[var(--accent)] intro-stage ${
         isExiting ? "intro-overlay-out" : ""
       }`}
       aria-hidden="true"
@@ -72,20 +77,51 @@ export function SiteIntro() {
         ))}
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-4xl flex-col items-center px-6 text-center">
-        <p className="intro-overline text-[10px] uppercase tracking-[0.42em] text-[var(--accent)]/60 sm:text-xs">
-          Bröllopshelg i Spanien
-        </p>
-        <h1 className="intro-name intro-title-shimmer wedding-name-stack mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text text-transparent sm:mt-6">
-          <span className="wedding-name-line">Maja</span>
-          <span className="wedding-name-heart-wrap">
-            <Heart className="intro-heart wedding-name-heart" />
-          </span>
-          <span className="wedding-name-line">Kristoffer</span>
-        </h1>
-        <p className="intro-date mt-5 text-[10px] uppercase tracking-[0.24em] text-[var(--accent)]/52 sm:mt-6 sm:text-[11px] sm:tracking-[0.28em]">
-          8–10 september 2027 • Castillo de Monda
-        </p>
+      <div className="relative z-10 flex h-full w-full flex-col px-4 pb-10 pt-20 sm:px-6 sm:pt-24 md:px-8 md:pb-12">
+        <div className="mx-auto flex w-full max-w-6xl flex-1">
+          <div className="flex w-full flex-1 flex-col px-5 py-7 text-center sm:px-9 sm:py-10">
+            <div className="flex flex-1 flex-col items-center justify-center">
+              <p className="intro-overline text-[10px] uppercase tracking-[0.42em] text-[var(--accent)]/60 sm:text-xs">
+                Bröllopshelg i Spanien
+              </p>
+              <h1 className="intro-name intro-title-shimmer wedding-name-stack mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text text-transparent sm:mt-6">
+                <span className="wedding-name-line">Maja</span>
+                <span className="wedding-name-heart-wrap">
+                  <Heart className="intro-heart wedding-name-heart" />
+                </span>
+                <span className="wedding-name-line">Kristoffer</span>
+              </h1>
+              <p className="intro-date mt-5 text-[10px] uppercase tracking-[0.24em] text-[var(--accent)]/52 sm:mt-7 sm:text-[11px] sm:tracking-[0.28em]">
+                8–10 september 2027 • Castillo de Monda
+              </p>
+              <div
+                aria-hidden="true"
+                className="invisible mx-auto mt-5 max-w-2xl text-[13px] leading-relaxed sm:mt-7 sm:text-[15px]"
+              >
+                <p>
+                  Den 9 september 2027 säger vi ja till varandra i Spanien och
+                  vi hoppas att ni vill vara med och fira tillsammans med oss.
+                </p>
+                <div className="mt-5 grid w-full max-w-xl gap-2 sm:grid-cols-3">
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border px-3 py-2 text-[10px] uppercase tracking-[0.18em]">
+                    8–10 september 2027
+                  </span>
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border px-3 py-2 text-[10px] uppercase tracking-[0.18em]">
+                    Castillo de Monda
+                  </span>
+                  <span className="inline-flex items-center justify-center gap-1.5 rounded-full border px-3 py-2 text-[10px] uppercase tracking-[0.18em]">
+                    Bröllopshelg
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div aria-hidden="true" className="invisible mt-auto pt-7 sm:pt-9">
+              <span className="inline-flex min-h-11 items-center justify-center gap-2 self-center rounded-full border px-6 py-3 text-[11px] font-medium uppercase tracking-[0.2em] sm:px-8 sm:py-4">
+                OSA
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
