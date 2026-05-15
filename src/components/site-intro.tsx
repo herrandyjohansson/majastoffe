@@ -82,9 +82,9 @@ export function SiteIntro() {
           <div className="flex w-full flex-1 flex-col px-5 py-7 text-center sm:px-9 sm:py-10">
             <div className="flex flex-1 flex-col items-center justify-center">
               <p className="intro-overline text-[10px] uppercase tracking-[0.42em] text-[var(--accent)]/60 sm:text-xs">
-                Bröllopshelg i Spanien
+                Brölopp i Spanien
               </p>
-              <h1 className="intro-name intro-title-shimmer wedding-name-stack mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text text-transparent sm:mt-6">
+              <h1 className="intro-name intro-title-shimmer wedding-name-stack wedding-name-stack--display mt-5 bg-gradient-to-b from-[var(--accent)] via-[#5b4b3d] to-[#3f3228] bg-clip-text text-transparent sm:mt-6">
                 <span className="wedding-name-line">Maja</span>
                 <span className="wedding-name-heart-wrap">
                   <Heart className="intro-heart wedding-name-heart" />
@@ -110,7 +110,7 @@ export function SiteIntro() {
                     Castillo de Monda
                   </span>
                   <span className="inline-flex items-center justify-center gap-1.5 rounded-full border px-3 py-2 text-[10px] uppercase tracking-[0.18em]">
-                    Bröllopshelg
+                    Bröllop i Spanien
                   </span>
                 </div>
               </div>

@@ -21,7 +21,6 @@ export function Schedule() {
       <div className="mx-auto max-w-4xl space-y-8">
         <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="mb-4 h-px w-full bg-gradient-to-r from-transparent via-[var(--primary)]/60 to-transparent" />
-          <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <Clock3 className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />
             8 september – Ankomst &amp; välkomstmiddag
@@ -43,7 +42,6 @@ export function Schedule() {
 
         <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="mb-4 h-px w-full bg-gradient-to-r from-transparent via-[var(--primary)]/60 to-transparent" />
-          <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <PartyPopper className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />
             9 september – Bröllopsdagen
@@ -68,7 +66,7 @@ export function Schedule() {
               så länge energin håller.
             </p>
             <p>
-              Musiken rundas av kl. 02.00, självklar till tonerna av Stad i
+              Musiken rundas av kl. 02.00, självklart till tonerna av Stad i
               ljus.
             </p>
           </div>
@@ -76,7 +74,6 @@ export function Schedule() {
 
         <div className="lux-card relative overflow-hidden rounded-2xl p-6">
           <div className="mb-4 h-px w-full bg-gradient-to-r from-transparent via-[var(--primary)]/60 to-transparent" />
-          <div className="absolute right-4 top-4 h-2 w-2 rounded-full bg-[var(--accent)]/30" />
           <h3 className="font-serif text-2xl font-light text-[var(--foreground)]">
             <Clock3 className="mr-2 inline h-5 w-5 text-[var(--accent)]/75" />
             10 september – Avresa
@@ -89,7 +86,7 @@ export function Schedule() {
             <p>Utcheckning sker senast kl. 11.00.</p>
             <p>
               Maja och Kristoffer kommer fortsätta sin lilla bröllopsvecka med
-              en helgs avslut på hotell X i X för att efter helgen åka vidare
+              en helgs avslut på hotell  i Fuengirola för att efter helgen åka vidare
               ett par dagar på tu man hand. Vill man fortsätta fira och ta det
               lugnt med oss fredag till söndag är man välkommen att boka samma
               hotell eller hitta något eget för att fortsätta njuta av allt vad

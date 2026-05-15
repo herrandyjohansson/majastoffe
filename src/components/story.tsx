@@ -21,7 +21,7 @@ export function Story() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-16">
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--muted)]/70">
           <Image
-            src="/paddleball.jpg"
+            src="/traffades.jpg"
             alt="Padel - sporten där vi träffades"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -63,7 +63,7 @@ export function Story() {
         <div className="flex flex-col justify-center space-y-8 lg:order-1">
           <div>
             <h3 className="mb-4 font-serif text-2xl font-light text-[var(--foreground)]">
-              Friariet
+              Frieriet
             </h3>
             <div className="space-y-4 text-[15px] leading-relaxed text-[var(--foreground)]/75">
               <p>
@@ -80,7 +80,7 @@ export function Story() {
         
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl shadow-md ring-1 ring-[var(--muted)]/70 lg:order-2">
           <Image
-            src="/story-engagement.jpg"
+            src="/frieriet.jpg"
             alt="Strand i soliga södra Spanien"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

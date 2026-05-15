@@ -65,7 +65,7 @@ och dryck finns att köpa på hotellet under dagen.
 Kl. 16.45 ber vi alla gäster att vara på plats vid ceremonin.
 Efter vigseln fortsätter firandet med middag, mingel och fest. När kvällen går över i natt
 öppnar dansgolvet och vi firar tillsammans så länge energin håller.
-Musiken rundas av kl. 02.00, självklar till tonerna av Stad i ljus.
+Musiken rundas av kl. 02.00, självklart till tonerna av Stad i ljus.
 
 10 september – Avresa
 Njut av en sista morgon tillsammans i Spanien. Frukost serveras på hotellet för alla

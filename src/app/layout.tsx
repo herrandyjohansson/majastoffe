@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bodoni_Moda, Inter } from "next/font/google";
+import { Bodoni_Moda, Cinzel, Inter, Parisienne } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,10 +14,22 @@ const bodoni = Bodoni_Moda({
   weight: ["400", "500", "600", "700"],
 });
 
+const cinzel = Cinzel({
+  variable: "--font-wedding-display",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const weddingScript = Parisienne({
+  variable: "--font-wedding-script",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "Maja & Kristoffer – Bröllop i Spanien",
   description:
-    "Bröllopshelg för Maja Reiz & Kristoffer Nilsson på Castillo de Monda, Spanien – 8–10 september 2027.",
+    "Bröllop i Spanien för Maja Reiz & Kristoffer Nilsson på Castillo de Monda, Spanien – 8–10 september 2027.",
 };
 
 export default function RootLayout({
@@ -28,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="sv">
       <body
-        className={`${inter.variable} ${bodoni.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
+        className={`${inter.variable} ${bodoni.variable} ${cinzel.variable} ${weddingScript.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
         suppressHydrationWarning
       >
         <script
