@@ -14,12 +14,6 @@ const inputClass =
 
 const selectClass = inputClass;
 
-const ATTENDING_OPTIONS = [
-  { value: 'yes' as const, label: 'Ja, jag kommer!' },
-  { value: 'no' as const, label: 'Tyvärr, jag kan inte komma' },
-  { value: 'maybe' as const, label: 'Jag återkommer senare' },
-];
-
 function RsvpForm() {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
@@ -40,6 +34,7 @@ function RsvpForm() {
       companion_name: '',
       email: '',
       accommodation: '',
+      attending: '',
       dietary: '',
     },
   });
@@ -85,8 +80,8 @@ function RsvpForm() {
         companion_name: '',
         email: '',
         accommodation: '',
+        attending: '',
         dietary: '',
-        attending: undefined,
       });
     } catch {
       setError('root', {
@@ -148,44 +143,29 @@ function RsvpForm() {
             ) : null}
           </div>
 
-          <fieldset
-            className={`min-w-0 border-0 p-0 sm:col-span-2 ${
-              errors.attending
-                ? 'rounded-xl ring-2 ring-[var(--primary)]/40 ring-offset-2 ring-offset-transparent'
-                : ''
-            }`}
-          >
-            <legend className={`${labelClass} px-0`}>Kommer du? *</legend>
-            <div className="mt-2 grid gap-2" role="presentation">
-              {ATTENDING_OPTIONS.map(({ value, label }) => {
-                const selected = attending === value;
-                return (
-                  <label
-                    key={value}
-                    className={`flex cursor-pointer items-center gap-3 rounded-lg border px-4 py-3.5 text-left text-sm transition ${
-                      selected
-                        ? 'border-[var(--primary)] bg-white/90 shadow-sm ring-1 ring-[var(--primary)]/25'
-                        : 'border-[var(--muted)]/90 bg-white/70 hover:border-[var(--foreground)]/25'
-                    }`}
-                  >
-                    <input
-                      type="radio"
-                      value={value}
-                      className="h-4 w-4 shrink-0 accent-[#b3263f]"
-                      aria-invalid={errors.attending ? true : undefined}
-                      {...register('attending')}
-                    />
-                    <span className="text-[var(--foreground)]">{label}</span>
-                  </label>
-                );
-              })}
-            </div>
+          <div className="sm:col-span-2">
+            <label htmlFor="attending" className={labelClass}>
+              Kommer du? *
+            </label>
+            <select
+              id="attending"
+              className={`${selectClass} ${errors.attending ? 'border-red-600/50 ring-1 ring-red-600/20' : ''}`}
+              aria-invalid={errors.attending ? true : undefined}
+              aria-describedby={errors.attending ? 'attending-error' : undefined}
+              {...register('attending')}
+            >
+              <option value="" disabled>
+                Välj ja eller nej
+              </option>
+              <option value="yes">Ja</option>
+              <option value="no">Nej</option>
+            </select>
             {errors.attending ? (
-              <p className="mt-2 text-sm text-red-700/90" role="alert">
+              <p id="attending-error" className="mt-1.5 text-sm text-red-700/90" role="alert">
                 {errors.attending.message}
               </p>
             ) : null}
-          </fieldset>
+          </div>
 
           <div>
             <label htmlFor="person_count" className={labelClass}>

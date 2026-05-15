@@ -12,9 +12,8 @@ type RsvpBody = {
 };
 
 const ATTENDING_LABEL: Record<string, string> = {
-  yes: "Ja, jag kommer!",
-  no: "Tyvärr, jag kan inte komma",
-  maybe: "Jag återkommer senare",
+  yes: "Ja",
+  no: "Nej",
 };
 
 const ACCOMMODATION_LABEL: Record<string, string> = {
@@ -84,7 +83,7 @@ export async function POST(request: Request) {
   if (!isValidEmail(email)) {
     return NextResponse.json({ error: "Ogiltig e-postadress." }, { status: 400 });
   }
-  if (!["yes", "no", "maybe"].includes(attending)) {
+  if (!["yes", "no"].includes(attending)) {
     return NextResponse.json({ error: "Ogiltigt svar för närvaro." }, { status: 400 });
   }
   if (attending === "yes" && !["yes", "no"].includes(accommodation)) {

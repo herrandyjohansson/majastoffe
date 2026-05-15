@@ -25,7 +25,7 @@ export function Hero() {
             <div className="flex w-full flex-1 flex-col rounded-2xl border border-white/20 bg-black/20 px-5 py-7 text-center shadow-[0_24px_80px_rgba(0,0,0,0.38)] backdrop-blur-[2px] sm:rounded-3xl sm:px-9 sm:py-10">
               <div className="flex flex-1 flex-col items-center justify-center">
                 <p className="text-[10px] font-medium uppercase tracking-[0.42em] text-white/72 sm:text-xs">
-                  Brölopp i Spanien
+                  Bröllop i Spanien
                 </p>
                 <h1 className="wedding-name-stack wedding-name-stack--display wedding-name-stack--hero mt-5 text-white sm:mt-6">
                   <span className="wedding-name-line">Maja</span>
@@ -101,12 +101,15 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="mx-auto max-w-4xl rounded-3xl border border-[var(--muted)] bg-white/70 px-6 py-8 text-center shadow-sm sm:px-10 sm:py-10">
-            <div className="space-y-5 text-sm leading-relaxed text-[var(--foreground)]/75 sm:text-base">
-              <p>
+          <div className="mx-auto max-w-3xl rounded-3xl border border-[var(--muted)] bg-white/70 px-6 py-8 shadow-sm sm:px-10 sm:py-10">
+            <div className="mx-auto max-w-2xl space-y-5 text-left text-sm leading-[1.75] text-[var(--foreground)]/75 sm:text-[15px]">
+              <p className="font-serif text-base font-light leading-[1.7] text-[var(--foreground)]/88 sm:text-[17px]">
                 Eftersom ni kommer att resa långt vill vi passa på att umgås i fler
-                dagar. Därför planerar vi bröllopsfirande från den 8 till 10
-                september 2027.
+                dagar. Därför planerar vi bröllopsfirande från den{" "}
+                <span className="font-medium text-[var(--foreground)]/90">
+                  8 till 10 september 2027
+                </span>
+                .
               </p>
               <p>
                 På den här sidan hittar ni all information om bröllopet, resan och
@@ -117,7 +120,7 @@ export function Hero() {
                 Spanien och skapa fantastiska minnen tillsammans.
               </p>
             </div>
-            <div className="mt-6 flex items-center justify-center gap-2 text-[var(--accent)]/70">
+            <div className="mt-8 flex items-center justify-center gap-2 border-t border-[var(--muted)]/80 pt-6 text-[var(--accent)]/70">
               <Sparkles className="h-4 w-4" aria-hidden="true" />
               <span className="text-[11px] uppercase tracking-[0.2em]">Vi längtar</span>
               <Sparkles className="h-4 w-4" aria-hidden="true" />

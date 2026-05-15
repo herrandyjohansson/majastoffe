@@ -8,8 +8,8 @@ export const rsvpSchema = z
     }),
     companion_name: z.string().max(200).optional(),
     email: z.string().trim().min(1, "Ange e-post").email("Ogiltig e-postadress"),
-    attending: z.enum(["yes", "no", "maybe"], {
-      error: () => ({ message: "Välj om du kan komma" }),
+    attending: z.enum(["yes", "no"], {
+      error: () => ({ message: "Välj ja eller nej" }),
     }),
     accommodation: z.string().optional(),
     dietary: z.string().max(4000).optional(),
@@ -45,7 +45,7 @@ export type RsvpFormDraft = {
   person_count: "1" | "2";
   companion_name?: string;
   email: string;
-  attending?: "yes" | "no" | "maybe";
+  attending?: "" | "yes" | "no";
   accommodation?: "" | "yes" | "no";
   dietary?: string;
 };

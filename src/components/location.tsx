@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Car, MapPin, ParkingCircle, Plane } from "lucide-react";
+import { Bus, Car, CarTaxiFront } from "lucide-react";
 import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 export function Location() {
@@ -30,10 +30,32 @@ export function Location() {
           Monda med bil. Från flygplatsen kan du enkelt ta dig till Monda på
           flera sätt:
         </p>
-        <ul className="list-disc space-y-1 pl-5">
-          <li>Hyra bil direkt på flygplatsen (parkering finns på hotellet)</li>
-          <li>Ta taxi, Bolt eller Uber</li>
-          <li>Ta buss från Malaga till Marbella busstation och sedan taxi därifrån</li>
+        <ul className="space-y-2.5" role="list">
+          <li className="flex gap-2.5">
+            <Car
+              className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
+              aria-hidden="true"
+            />
+            <span>
+              Hyra bil direkt på flygplatsen (parkering finns på hotellet)
+            </span>
+          </li>
+          <li className="flex gap-2.5">
+            <CarTaxiFront
+              className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
+              aria-hidden="true"
+            />
+            <span>Ta taxi, Bolt eller Uber</span>
+          </li>
+          <li className="flex gap-2.5">
+            <Bus
+              className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
+              aria-hidden="true"
+            />
+            <span>
+              Ta buss från Malaga till Marbella busstation och sedan taxi därifrån
+            </span>
+          </li>
         </ul>
       </div>
 

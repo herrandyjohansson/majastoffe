@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeartHandshake, Sparkles } from "lucide-react";
+import { Gem, HeartHandshake } from "lucide-react";
 import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 export function Story() {
@@ -63,6 +63,7 @@ export function Story() {
         <div className="flex flex-col justify-center space-y-8 lg:order-1">
           <div>
             <h3 className="mb-4 font-serif text-2xl font-light text-[var(--foreground)]">
+              <Gem className="mr-2 inline h-5 w-5 text-[var(--accent)]" aria-hidden="true" />
               Frieriet
             </h3>
             <div className="space-y-4 text-[15px] leading-relaxed text-[var(--foreground)]/75">
