@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { BedDouble, Clock3, Coffee, Mic2, Shirt, Wallet } from "lucide-react";
+import { BedDouble, Clock3, Coffee, Mail, Mic2, Shirt, Wallet } from "lucide-react";
 import { DecorativeHeartDivider } from "./decorative-heart-divider";
 
 export function Accommodation() {
@@ -30,37 +30,37 @@ export function Accommodation() {
             <BedDouble className="mr-1 inline h-4 w-4" />
             Boendeinformation
           </p>
-          <p>
-            Betalning för boendet görs till Maja och Kristoffer. Mer
-            information kring bokning och betalning skickas till de gäster som
-            väljer att bo på hotellet.
-          </p>
+              <p>Vi ser gärna att alla bor på bröllopsplatsen, Castillo de Monda.</p>
           <ul className="space-y-2.5" role="list">
             <li className="flex gap-2.5">
               <Wallet
                 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
                 aria-hidden="true"
-              />
+                />
               <span>Pris: 500 kr per person och natt</span>
             </li>
             <li className="flex gap-2.5">
               <Coffee
                 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
                 aria-hidden="true"
-              />
+                />
               <span>Frukost ingår</span>
             </li>
             <li className="flex gap-2.5">
               <Clock3
                 className="mt-0.5 h-4 w-4 shrink-0 text-[var(--accent)]/80"
                 aria-hidden="true"
-              />
+                />
               <span>
                 Incheckning sker från kl. 15.00 och utcheckning är kl. 11.00.
               </span>
             </li>
           </ul>
-          <p>Vi ser gärna att alla bor på bröllopsplatsen, Castillo de Monda.</p>
+                <p>
+                  Betalning för boendet görs till Maja och Kristoffer. Mer
+                  information kring bokning och betalning skickas till de gäster som
+                  väljer att bo på hotellet.
+                </p>
         </div>
       </div>
 
@@ -90,11 +90,13 @@ export function Accommodation() {
               <blockquote className="border-l-2 border-[var(--primary)]/50 py-0.5 pl-5">
                 <p className="font-serif text-[15px] font-light leading-[1.7] italic text-[var(--foreground)]/88">
                   Vill du säga några ord, hålla tal eller hitta på något kul under helgen?
-                  Hör gärna av dig till våra toastmasters!
+                  Hör gärna av dig till Joanna – hon tar emot alla förfrågningar om tal
+                  och skålar.
                 </p>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--foreground)]/62">
-                  För att vi ska hinna njuta ordentligt av både paellakvällen och
-                  bröllopsdagen kommer talen att spridas ut över båda dagarna.
+                  Talen fördelas sedan mellan paellakvällen och bröllopsdagen, med
+                  Annika som värd dag 1 och Joanna &amp; Alex dag 2, så att vi hinner
+                  njuta ordentligt av båda dagarna.
                 </p>
               </blockquote>
 
@@ -135,8 +137,17 @@ export function Accommodation() {
                           Bröllopsdagen
                         </p>
                       </div>
-                      <div className="space-y-0.5 font-serif text-lg font-light leading-snug text-[var(--foreground)] sm:text-right">
+                      <div className="min-w-0 space-y-1.5 font-serif text-lg font-light leading-snug text-[var(--foreground)] sm:text-right">
                         <p>Joanna & Alex Engström</p>
+                        <a
+                          href="mailto:Joanna.linda.engstrom@gmail.com"
+                          className="inline-flex max-w-full min-h-11 items-start gap-1.5 py-1 font-sans text-sm leading-snug text-[var(--accent)]/90 transition-colors hover:text-[var(--accent)] sm:ml-auto sm:min-h-0 sm:items-center sm:py-0"
+                        >
+                          <Mail className="mt-0.5 h-3.5 w-3.5 shrink-0 sm:mt-0" aria-hidden="true" />
+                          <span className="break-all text-left sm:break-normal sm:text-right">
+                            Joanna.linda.engstrom@gmail.com
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </article>

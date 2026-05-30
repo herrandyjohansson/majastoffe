@@ -63,13 +63,16 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="mt-auto pt-7 sm:pt-9">
+              <div className="mt-auto flex flex-col items-center pt-7 sm:pt-9">
                 <a
                   href="#rsvp"
                   className="inline-flex min-h-11 items-center justify-center gap-2 self-center rounded-full border border-white/50 bg-white/20 px-6 py-3 text-[11px] font-medium uppercase tracking-[0.2em] text-white shadow-lg transition-all hover:-translate-y-0.5 hover:bg-white/30 sm:px-8 sm:py-4"
                 >
                   OSA
                 </a>
+                <p className="mt-3 text-[10px] font-medium uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
+                  Senast 30 september 2026
+                </p>
               </div>
             </div>
           </div>

@@ -10,7 +10,7 @@ Vi ser verkligen fram emot att samla våra favoritmänniskor i Spanien och skapa
 fantastiska minnen tillsammans.
 Maja Reiz &amp; Kristoffer Nilsson
 
-OSA senast den 1 september 2026.
+OSA senast den 30 september 2026.
 Vänligen fyll i formuläret nedan för att meddela om du kan komma.
 Om ni har några frågor är ni alltid välkomna att kontakta oss
 

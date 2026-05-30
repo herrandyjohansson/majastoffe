@@ -23,7 +23,7 @@ const faqs = [
   {
     question: "Kan man hålla tal?",
     answer:
-      "Självklart! Vill du hålla ett tal, meddela gärna vår toastmaster i förväg så vi kan planera kvällens program.",
+      "Självklart! Hör av dig till Joanna i förväg (se Toastmasters under Boende) – hon tar emot alla förfrågningar och talen fördelas mellan de två dagarna.",
   },
   {
     question: "Vad önskar ni er i present?",

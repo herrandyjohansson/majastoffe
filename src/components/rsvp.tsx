@@ -303,7 +303,7 @@ export function Rsvp() {
           OSA
         </h2>
         <p className="mx-auto mt-4 max-w-md text-sm text-[var(--foreground)]/65">
-          Vänligen meddela oss om du kan komma senast <strong>1 september 2026</strong>.
+          Vänligen meddela oss om du kan komma senast <strong>30 september 2026</strong>.
         </p>
       </div>
 
