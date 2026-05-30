@@ -70,9 +70,13 @@ export function Hero() {
                 >
                   OSA
                 </a>
-                <p className="mt-3 text-[10px] font-medium uppercase tracking-[0.18em] text-white/75 sm:text-[11px]">
-                  Senast 30 september 2026
-                </p>
+                <div className="mt-3.5 flex items-center gap-2.5 sm:mt-4 sm:gap-3">
+                  <div className="h-px w-5 bg-white/30 sm:w-6" aria-hidden="true" />
+                  <p className="font-serif text-[11px] font-light italic leading-none text-white/55 sm:text-xs">
+                    Senast 30 september 2026
+                  </p>
+                  <div className="h-px w-5 bg-white/30 sm:w-6" aria-hidden="true" />
+                </div>
               </div>
             </div>
           </div>
