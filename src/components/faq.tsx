@@ -8,7 +8,7 @@ const faqs = [
   {
     question: "Kan jag ta med barn?",
     answer:
-      "Så här är det: barnen får stanna hemma, men vuxna får extra allt! Dans, paella, poolhäng och skratt – vi lovar att fylla helgen med minnen som gör barnen lite avundsjuka.",
+      "Så här är det: barnen får stanna hemma, men vuxna får extra allt! Dans, paella, poolhäng och skratt – vi lovar att fylla helgen med minnen som gör det värt det.",
   },
   {
     question: "Finns det pool på hotellet?",
