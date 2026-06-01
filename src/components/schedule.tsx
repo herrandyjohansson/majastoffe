@@ -45,7 +45,7 @@ export function Schedule() {
     >
       <div className="mb-12 text-center">
         <p className="mb-3 text-[11px] font-medium uppercase tracking-[0.3em] text-[var(--accent)]">
-          Schema för helgen
+          Schema för dagarna
         </p>
         <DecorativeHeartDivider />
       </div>
@@ -62,7 +62,7 @@ export function Schedule() {
               </span>
               <div>
                 <h2 className="font-serif text-2xl font-light tracking-wide text-[var(--foreground)] md:text-3xl">
-                  Schema för helgen
+                  Schema för dagarna
                 </h2>
                 <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.24em] text-[var(--accent)]/85">
                   8–10 september 2027
