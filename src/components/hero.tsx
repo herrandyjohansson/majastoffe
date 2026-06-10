@@ -111,7 +111,7 @@ export function Hero() {
           <div className="mx-auto max-w-3xl rounded-3xl border border-[var(--muted)] bg-white/70 px-6 py-8 shadow-sm sm:px-10 sm:py-10">
             <div className="mx-auto max-w-2xl space-y-5 text-left text-sm leading-[1.75] text-[var(--foreground)]/75 sm:text-[15px]">
               <p className="font-serif text-base font-light leading-[1.7] text-[var(--foreground)]/88 sm:text-[17px]">
-                Eftersom ni kommer att resa långt vill vi passa på att umgås i fler
+                Eftersom ni kommer att resa långt vill vi passa på att umgås i flera
                 dagar. Därför planerar vi bröllopsfirande från den{" "}
                 <span className="font-medium text-[var(--foreground)]/90">
                   8 till 10 september 2027

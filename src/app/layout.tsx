@@ -26,10 +26,35 @@ const weddingScript = Parisienne({
   weight: ["400"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Maja & Kristoffer – Bröllop i Spanien",
   description:
     "Bröllop i Spanien för Maja Reiz & Kristoffer Nilsson på Castillo de Monda, Spanien – 8–10 september 2027.",
+  openGraph: {
+    title: "Maja & Kristoffer – Bröllop i Spanien",
+    description:
+      "Bröllop i Spanien för Maja Reiz & Kristoffer Nilsson på Castillo de Monda, Spanien – 8–10 september 2027.",
+    images: [
+      {
+        url: "/hero-new.jpg",
+        alt: "Maja och Kristoffers bröllopsceremoni",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maja & Kristoffer – Bröllop i Spanien",
+    description:
+      "Bröllop i Spanien för Maja Reiz & Kristoffer Nilsson på Castillo de Monda, Spanien – 8–10 september 2027.",
+    images: ["/hero-new.jpg"],
+  },
 };
 
 export default function RootLayout({
